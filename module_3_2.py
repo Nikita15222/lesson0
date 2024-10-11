@@ -1,4 +1,4 @@
-def send_email(message,recipient, sender = "university.help@gmail.com"):
+def send_email(message,recipient, *, sender = "university.help@gmail.com"):
 
     # Проверка корректности адреса эл. почты
     if recipient.endswith('.com') != True and recipient.endswith('.ru') != True and recipient.endswith('.net') != True:
